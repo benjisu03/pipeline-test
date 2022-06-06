@@ -7,5 +7,4 @@ image_resource:
 inputs:
   - name: repo
 run:
-  path: echo
-  args: [hello world]
+  path: ls -la
