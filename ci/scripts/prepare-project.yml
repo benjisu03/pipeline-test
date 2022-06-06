@@ -7,4 +7,5 @@ image_resource:
 inputs:
   - name: repo
 run:
-  path: pwd
+  path: ls
+  args: ["-al"]
