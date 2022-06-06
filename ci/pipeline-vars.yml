@@ -1,0 +1,14 @@
+github_organization: corporate-supply-chain
+
+github_repository: SharedFunctions
+
+project_name: BetterComboBox
+
+test_projects:
+  -
+
+artifactory_repository: "nuget-local"
+
+master: pull-request
+
+major_version: 2
