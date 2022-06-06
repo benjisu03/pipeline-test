@@ -7,4 +7,4 @@ image_resource:
 inputs:
   - name: repo
 run:
-  path: ls -la
+  path: pwd
