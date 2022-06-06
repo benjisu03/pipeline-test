@@ -2,13 +2,16 @@ resources:
   - name: repo-test
     type: git
     source:
-      uri: https://github.hy-vee.cloud/ben-johnson/pipeline-test.git
+      uri: https://github.com/benjisu03/pipeline-test.git
       branch: master
 
 jobs:
   - name: test
     public: true
     plan:
-      - get: repo-test
+      - get: repo
+        resource: repo-test
+        trigger: true
+
       - task: testing
-        file: repo-test/ci/scripts/prepare-project.yml
+        file: repo/ci/scripts/prepare-project.yml

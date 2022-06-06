@@ -7,7 +7,7 @@ image_resource:
 inputs:
   - name: repo
 run:
-  path: ../prepare-project.sh
+  path: ci/scripts/prepare-project.sh
 params:
   MAJOR_VERSION:
   GITHUB_ORGANIZATION:
