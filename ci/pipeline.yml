@@ -11,7 +11,7 @@ jobs:
     plan:
       - get: repo
         resource: repo-test
-        trigger: true
+        trigger: false
 
       - task: testing
         file: repo/ci/scripts/prepare-project.yml
